@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 # 基类
 class Base():
-    def __init__(self, driver: webdriver.Firefox()):
+    def __init__(self, driver):
         self.driver = driver
 
 # 查找单元素的方法
@@ -40,4 +40,4 @@ class Base():
             t = element.text
             return t
         except:
-            return "" 
+            return ""
