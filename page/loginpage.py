@@ -22,8 +22,12 @@ class LoginPage():
         # self.driver.find_element_by_css_selector(".formBox>form>input:nth-child(5)").click()
 
     def get_login_result(self):
-        r = self.b.get_text(("css selector", "#sessionInfoDiv>strong"))
-        return r
+        try:
+            r = self.b.get_text(("css selector", "#sessionInfoDiv>strong"))
+            return r
+        except:
+            r = ""
+            return r
 
 
 if __name__ == "__main__":

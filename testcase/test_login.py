@@ -1,29 +1,41 @@
 from selenium import webdriver
 from page.loginpage import LoginPage
 import unittest
+import ddt
+from common.read_excel import ExcelUtil
+
+# d1 = [
+#     {"usr": "admin", "psw": "666666", "except": True},
+#     {"usr": "admin", "psw": "123456", "except": False}
+# ]
+
+file_path = "testdata.xlsx"
+sheet_name = "Sheet1"
+data = ExcelUtil(file_path, sheet_name)
+d1 = data.dict_data()
 
 
+@ddt.ddt
 class TestLogin(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.maximize_window()
         self.stg = LoginPage(self.driver)
 
-    def test_login_1(self):
-        self.stg.login("admin", "666666")
+    @ddt.data(*d1)
+    def test_login(self, test_data):
+        usr = test_data["usr"]
+        psw = test_data["psw"]
+        exp = test_data["except"]
+        self.stg.login(usr, psw)
         result = self.stg.get_login_result()
         if result == "admin":
-            return True
+            print("登录成功")
+            actual = True
         else:
-            return False
-
-    def test_login_2(self):
-        self.stg.login("admin", "123456")
-        result = self.stg.get_login_result()
-        if result == "admin":
-            return True
-        else:
-            return False
+            print("登录失败")
+            actual = False
+        self.assertTrue(exp == actual)
 
     def tearDown(self):
         self.driver.quit()
