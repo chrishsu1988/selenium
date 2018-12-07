@@ -40,3 +40,8 @@ class Base():
             return t
         except:
             return ""
+
+# 切换iframe方法
+    def switch_frame(self, locator):
+        ele = self.find(locator)
+        self.driver.switch_to.frame(ele)

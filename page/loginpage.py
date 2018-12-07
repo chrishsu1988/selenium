@@ -9,7 +9,7 @@ class LoginPage():
         self.driver = driver
         self.b = Base(self.driver)
 
-    def login(self, usr="admin", psw="111111"):
+    def login(self, usr="admin", psw="666666"):
         self.driver.get("http://47.97.160.167:8980/weibofenqi-manager/login/index.do")
         sleep(3)
         self.b.clear(("css selector", ".formBox>form>input:nth-child(1)"))

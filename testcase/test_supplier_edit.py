@@ -1,9 +1,8 @@
 import unittest
 from selenium import webdriver
 import time
-from common import edit
-from common import query
-from common import login
+from page.loginpage import LoginPage
+from page.suppliermange import SupplierMange
 
 
 class TestEditSupplier(unittest.TestCase):
@@ -12,15 +11,15 @@ class TestEditSupplier(unittest.TestCase):
         self.driver = webdriver.Firefox()
         self.driver.get("http://47.97.160.167:8980/weibofenqi-manager/login/index.do")
         self.driver.maximize_window()
+        self.lg = LoginPage(self.driver)
+        self.lg.login()
+        self.edit = SupplierMange(self.driver)
 
     def test_edit(self):
         """编辑供应商test003"""
+        self.edit.supplier_edit("test003", "test003456")
         time.sleep(1)
-        login.login(self.driver, "admin", "666666")
-        time.sleep(1)
-        edit.edit(self.driver, "test003", "test003456")
-        time.sleep(1)
-        t = query.query(self.driver, "test003456")
+        t = self.edit.supplier_query("test003456")
         time.sleep(1)
         self.assertEqual(t, "test003456")
 
