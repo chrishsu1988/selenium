@@ -29,7 +29,7 @@ class BrandMange():
         self.b.click(("xpath", ".//*[@id='opter_layout']/div[15]/div[3]/a"))
         sleep(1)
 
-    def brand_query(self, name):
+    def brand_query(self, name, n):
         self.b.clear(("xpath", ".//*[@id='_easyui_textbox_input1']"))
         sleep(1)
         self.b.send(("xpath", ".//*[@id='_easyui_textbox_input1']"), name)
@@ -37,7 +37,7 @@ class BrandMange():
         self.b.click(("xpath", ".//*[@id='button_search']"))
         sleep(1)
         try:
-            a = self.b.get_text(("xpath", ".//tr[contains(@id,'2-0')]/td[2]/div"))
+            a = self.b.get_text(("xpath", (".//tr[contains(@id,'2-0')]/td[%s]/div" % n)))
             return a
         except:
             return ""
@@ -68,6 +68,51 @@ class BrandMange():
         self.b.click(("xpath", ".//*[@id='opter_layout']/div[15]/div[3]/a"))
         sleep(1)
 
+    def brand_display(self, name):
+        self.b.click(("xpath", ".//*[@id='menu_accordion']/div[2]/div[1]/div[1]"))
+        sleep(1)
+        self.b.click(("xpath", ".//*[@id='menu_accordion']/div[2]/div[2]/ul/li[3]"))
+        sleep(1)
+        self.b.switch_frame(("id", "mainFrame_1"))
+        sleep(1)
+        self.b.clear(("xpath", ".//*[@id='_easyui_textbox_input1']"))
+        sleep(1)
+        self.b.send(("xpath", ".//*[@id='_easyui_textbox_input1']"), name)
+        sleep(1)
+        self.b.click(("xpath", ".//*[@id='button_search']"))
+        sleep(1)
+        self.b.click(("xpath", ".//tr[contains(@id,'2-0')]/td[1]/div/input"))
+        sleep(1)
+        self.b.click(("xpath", ".//*[@id='button-disBlock']"))
+        sleep(1)
+        self.b.click(("xpath", ".//*[@id='opter_layout']/div[15]/div[3]/a[1]"))
+        sleep(1)
+        self.b.click(("xpath", ".//*[@id='opter_layout']/div[15]/div[3]/a"))
+        sleep(1)
+
+    def brand_hide(self, name):
+        self.b.click(("xpath", ".//*[@id='menu_accordion']/div[2]/div[1]/div[1]"))
+        sleep(1)
+        self.b.click(("xpath", ".//*[@id='menu_accordion']/div[2]/div[2]/ul/li[3]"))
+        sleep(1)
+        self.b.switch_frame(("id", "mainFrame_1"))
+        sleep(1)
+        self.b.clear(("xpath", ".//*[@id='_easyui_textbox_input1']"))
+        sleep(1)
+        self.b.send(("xpath", ".//*[@id='_easyui_textbox_input1']"), name)
+        sleep(1)
+        self.b.click(("xpath", ".//*[@id='button_search']"))
+        sleep(1)
+        self.b.click(("xpath", ".//tr[contains(@id,'2-0')]/td[1]/div/input"))
+        sleep(1)
+        self.b.click(("xpath", ".//*[@id='button-block']"))
+        sleep(1)
+        self.b.click(("xpath", ".//*[@id='opter_layout']/div[15]/div[3]/a[1]"))
+        sleep(1)
+        self.b.click(("xpath", ".//*[@id='opter_layout']/div[15]/div[3]/a"))
+        sleep(1)
+
+
 
 if __name__ == "__main__":
     driver = webdriver.Firefox()
@@ -78,7 +123,7 @@ if __name__ == "__main__":
     lg.login("admin", "666666")
     # bd.brand_add("test锤子", "10086", r"D:\ppoh75.png")
     # q = bd.brand_query("test锤子")
-    bd.brand_edit("test锤子", "test锤子001")
-    q = bd.brand_query("test锤子001")
+    bd.brand_hide("test锤子001")
+    q = bd.brand_query("test锤子001", 6)
     print(q)
     driver.quit()
