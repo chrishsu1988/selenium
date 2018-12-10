@@ -15,7 +15,7 @@ class TestAddBrand(unittest.TestCase):
     def test_add_brand(self):
         """添加品牌：test锤子"""
         self.add.brand_add("test锤子", "10086", r"D:\ppoh75.png")
-        q = self.add.brand_query("test锤子")
+        q = self.add.brand_query("test锤子", 2)
         self.assertEqual(q, "test锤子")
 
     def tearDown(self):
