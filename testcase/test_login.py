@@ -17,6 +17,7 @@ d1 = data.dict_data()
 
 @ddt.ddt
 class TestLogin(unittest.TestCase):
+    """登录测试用例"""
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.maximize_window()
@@ -24,6 +25,7 @@ class TestLogin(unittest.TestCase):
 
     @ddt.data(*d1)
     def test_login(self, test_data):
+        """不同条件下的登录"""
         usr = test_data["usr"]
         psw = test_data["psw"]
         exp = test_data["except"]
