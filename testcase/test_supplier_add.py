@@ -16,7 +16,7 @@ class TestAddSupplier(unittest.TestCase):
         self.add = SupplierMange(self.driver)
 
     def test_add_supplier(self):
-        """添加供应商test003"""
+        """添加供应商：test003"""
         self.add.supplier_add("test003")
         t = self.add.supplier_query( "test003")
         self.assertEqual(t, "test003")
