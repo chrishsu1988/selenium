@@ -5,7 +5,7 @@ from page.loginpage import LoginPage
 from page.brandmange import BrandMange
 
 
-class TestEditSupplier(unittest.TestCase):
+class TestBrandHide(unittest.TestCase):
     """隐藏品牌测试用例"""
     def setUp(self):
         self.driver = webdriver.Firefox()
@@ -13,7 +13,7 @@ class TestEditSupplier(unittest.TestCase):
         self.lg.login()
         self.edit = BrandMange(self.driver)
 
-    def test_edit(self):
+    def test_brand_hide(self):
         """隐藏品牌：test锤子001"""
         self.edit.brand_hide("test锤子001")
         t = self.edit.brand_query("test锤子001", 6)

@@ -15,7 +15,7 @@ class TestAddSupplier(unittest.TestCase):
         self.stg.login()
         self.add = SupplierMange(self.driver)
 
-    def test_add_supplier(self):
+    def test_supplier_add(self):
         """添加供应商：test003"""
         self.add.supplier_add("test003")
         t = self.add.supplier_query( "test003")

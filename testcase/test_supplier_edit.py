@@ -13,7 +13,7 @@ class TestEditSupplier(unittest.TestCase):
         self.lg.login()
         self.edit = SupplierMange(self.driver)
 
-    def test_edit(self):
+    def test_supplier_edit(self):
         """编辑供应商：test003"""
         self.edit.supplier_edit("test003", "test003456")
         t = self.edit.supplier_query("test003456")

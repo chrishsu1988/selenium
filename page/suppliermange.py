@@ -33,7 +33,7 @@ class SupplierMange():
         sleep(1)
         self.b.switch_frame(("id", "mainFrame_1"))
         sleep(1)
-        self.b.clear(("xpath", "#_easyui_textbox_input1"))
+        self.b.clear(("css selector", "#_easyui_textbox_input1"))
         sleep(1)
         self.b.send(("css selector", "#_easyui_textbox_input1"), supplier)
         sleep(1)

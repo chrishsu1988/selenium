@@ -5,7 +5,7 @@ from page.loginpage import LoginPage
 from page.brandmange import BrandMange
 
 
-class TestEditSupplier(unittest.TestCase):
+class TestBrandShow(unittest.TestCase):
     """显示品牌测试用例"""
     def setUp(self):
         self.driver = webdriver.Firefox()
@@ -13,7 +13,7 @@ class TestEditSupplier(unittest.TestCase):
         self.lg.login()
         self.edit = BrandMange(self.driver)
 
-    def test_edit(self):
+    def test_brand_show(self):
         """显示品牌：test锤子001"""
         self.edit.brand_display("test锤子001")
         t = self.edit.brand_query("test锤子001", 6)

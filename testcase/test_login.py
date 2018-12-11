@@ -9,7 +9,7 @@ from common.read_excel import ExcelUtil
 #     {"usr": "admin", "psw": "123456", "except": False}
 # ]
 
-file_path = "testdata.xlsx"
+file_path = r"D:\autopro\testcase\testdata.xlsx"
 sheet_name = "Sheet1"
 data = ExcelUtil(file_path, sheet_name)
 d1 = data.dict_data()

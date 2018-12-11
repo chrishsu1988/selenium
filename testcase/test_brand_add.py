@@ -12,7 +12,7 @@ class TestAddBrand(unittest.TestCase):
         self.stg.login()
         self.add = BrandMange(self.driver)
 
-    def test_add_brand(self):
+    def test_brand_add(self):
         """添加品牌：test锤子"""
         self.add.brand_add("test锤子", "10086", r"D:\ppoh75.png")
         q = self.add.brand_query("test锤子", 2)
