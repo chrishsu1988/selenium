@@ -4,17 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/../WorkSpace/SeleniumProjects/js_1.py" description="# print(r1.is_selected())" line="20" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bafaa71-3cca-4193-881e-2930a58d86ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/suppliermange.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/suppliermange.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/test_brand_add.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/test_brand_add.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/test_brand_edit.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/test_brand_edit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/test_brand_hide.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/test_brand_hide.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/test_brand_show.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/test_brand_show.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/test_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/test_supplier_add.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/test_supplier_add.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/test_supplier_edit.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/test_supplier_edit.py" afterDir="false" />
-    </list>
+    <list default="true" id="6bafaa71-3cca-4193-881e-2930a58d86ab" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,35 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/runtest.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testcase/test_brand_add.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcase/test_brand_edit.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -117,7 +83,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="387" />
     <option name="y" value="33" />
     <option name="width" value="1400" />
@@ -135,26 +101,6 @@
             <path>
               <item name="autopro" type="b2602c69:ProjectViewProjectNode" />
               <item name="autopro" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autopro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autopro" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autopro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autopro" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autopro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autopro" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autopro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autopro" type="462c0819:PsiDirectoryNode" />
-              <item name="testcase" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -307,7 +253,7 @@
       <workItem from="1544174703390" duration="1280000" />
       <workItem from="1544405932139" duration="17681000" />
       <workItem from="1544429780995" duration="1717000" />
-      <workItem from="1544489279668" duration="862000" />
+      <workItem from="1544489279668" duration="1257000" />
     </task>
     <servers />
   </component>
@@ -344,10 +290,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31125000" />
+    <option name="totallyTimeSpent" value="31520000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.120469086" />
@@ -440,16 +386,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testcase/test_login.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -512,8 +448,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testcase/test_brand_add.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="399">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
